@@ -1,0 +1,129 @@
+.h1, h1 {
+    padding-top: 10px;
+}
+
+.h3, h3 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.table-container {
+  width: 100%;
+  overflow: visible; /* remove horizontal scroll and allow overflow */
+  display: flex;
+  justify-content: center; /* centers the table horizontally */
+}
+
+.client-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.client-table thead {
+  background-color: #3f658b; /* dark header background */
+  color: white;
+}
+
+.client-table th,
+.client-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  vertical-align: middle;
+  min-width: 100px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.client-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.client-table tbody tr:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+/* Button styles */
+.btn-delete {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+
+
+.btn-delete:hover {
+  background-color: #c82333;
+}
+
+/* Form styles */
+.client-form {
+  max-width: 900px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  background-color: lightblue;
+  margin-top: 50px;
+  padding: 35px;
+  border-radius: 12px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 150px;
+}
+
+.form-group.small {
+  flex: 1 1 120px;
+}
+
+.form-group.full-width {
+  flex: 1 1 100%;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+input, select, textarea {
+  padding: 6px 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+
+.client-form button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.client-form button:hover {
+  background-color: #0056b3;
+}
